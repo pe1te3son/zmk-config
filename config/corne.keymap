@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/led/led.h>
 &led_strip {
-    chain-length = <27>;
+    chain-length = <21>;
 };
 
 / {
