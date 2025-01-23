@@ -41,6 +41,15 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <36 37 38 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
+
+        shiftcaps: shiftcaps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFTCAPS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+
+            tapping-term-ms = <175>;
+        };
     };
 
     keymap {
@@ -56,10 +65,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp APOSTROPHE  &kp COMMA        &kp PERIOD           &kp P              &kp Y    &kp F      &kp G               &kp C                 &kp R            &kp L  &kp SLASH
-&kp ESCAPE    &kp A           &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I    &kp D      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S  &kp BACKSLASH
-&kp CAPSLOCK  &kp SEMI        &kp Q            &kp J                &kp K              &kp X    &kp B      &kp M               &kp W                 &kp V            &kp Z  &kp RIGHT_SHIFT
-                                               &kp LEFT_ALT         &kp BACKSPACE      &mo 2    &lt 1 RET  &kp SPACE           &kp LEFT_ALT
+&kp TAB     &kp APOSTROPHE  &kp COMMA        &kp PERIOD           &kp P              &kp Y    &kp F      &kp G               &kp C                 &kp R            &kp L  &kp SLASH
+&kp ESCAPE  &kp A           &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I    &kp D      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S  &kp BACKSLASH
+&shiftcaps  &kp SEMI        &kp Q            &kp J                &kp K              &kp X    &kp B      &kp M               &kp W                 &kp V            &kp Z  &kp RIGHT_SHIFT
+                                             &mo 3                &kp BACKSPACE      &mo 2    &lt 1 RET  &kp SPACE           &kp LEFT_ALT
             >;
         };
 
@@ -96,10 +105,19 @@
                              &kp LEFT_ALT  &kp BACKSPACE  &mo 2        &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
             >;
         };
+
+        screen_control {
+            bindings = <
+&trans  &kp LA(KP_NUMBER_1)  &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)  &kp LA(KP_NUMBER_4)  &kp LA(KP_NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(KP_NUMBER_6)  &kp LA(KP_NUMBER_7)  &kp LA(KP_NUMBER_8)  &kp LA(KP_NUMBER_9)  &kp LA(KP_NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans               &trans               &trans               &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &trans               &trans               &trans                 &trans  &trans  &trans
+            >;
+        };
     };
-    	 soft_off_wakers {
+
+    soft_off_wakers {
         compatible = "zmk,soft-off-wakeup-sources";
         wakeup-sources = <&kscan0>;
     };
-
 };
