@@ -107,6 +107,7 @@
         };
 
         screen_control {
+        label = "Screen";
             bindings = <
 &trans  &kp LA(KP_NUMBER_1)  &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)  &kp LA(KP_NUMBER_4)  &kp LA(KP_NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(KP_NUMBER_6)  &kp LA(KP_NUMBER_7)  &kp LA(KP_NUMBER_8)  &kp LA(KP_NUMBER_9)  &kp LA(KP_NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &trans
@@ -116,8 +117,8 @@
         };
     };
 
-    soft_off_wakers {
-        compatible = "zmk,soft-off-wakeup-sources";
-        wakeup-sources = <&kscan0>;
-    };
+  //  soft_off_wakers {
+  //      compatible = "zmk,soft-off-wakeup-sources";
+  //      wakeup-sources = <&kscan0>;
+  //  };
 };
