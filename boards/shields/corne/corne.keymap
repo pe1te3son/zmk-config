@@ -13,6 +13,7 @@
    chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+    zmk,underglow = &led_strip;
     };
 
     macros {
@@ -23,7 +24,7 @@
                 <&macro_press>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,8)>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(174,251,0)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 1>,
