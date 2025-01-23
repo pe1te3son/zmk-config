@@ -10,6 +10,10 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+   chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
+    };
 
     macros {
         lower_layer: lower_layer {
@@ -112,6 +116,9 @@
             >;
         };
     };
-
+soft_off_wakers {
+  compatible = "zmk,soft-off-wakeup-sources";
+  wakeup-sources = <&kscan0>;
+};
 
 };
