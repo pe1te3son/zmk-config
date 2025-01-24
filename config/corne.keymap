@@ -81,8 +81,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &tick     &kp COMMA        &kp PERIOD           &kp P              &kp Y    &kp F      &kp G               &kp C                 &kp R            &kp L  &kp SLASH
-&kp ESCAPE      &kp A     &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I    &kp D      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S  &kp BACKSLASH
+&none           &tick     &kp COMMA        &kp PERIOD           &kp P              &kp Y    &kp F      &kp G               &kp C                 &kp R            &kp L  &none
+&none           &kp A     &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I    &kp D      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S  &none
 &kp LEFT_SHIFT  &kp SEMI  &kp Q            &kp J                &kp K              &kp X    &kp B      &kp M               &kp W                 &kp V            &kp Z  &kp RIGHT_SHIFT
                                            &mo 3                &kp BACKSPACE      &mo 2    &lt 1 RET  &kp SPACE           &kp LEFT_ALT
             >;
@@ -98,10 +98,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4         &kp N5               &kp N6       &kp N7     &kp N8        &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans        &trans         &tog 2               &kp LEFT     &kp DOWN   &kp UP        &kp RIGHT  &trans  &trans
-&kp LSHFT   &kp CAPSLOCK  &trans        &trans        &trans         &ext_power EP_TOG    &trans       &trans     &trans        &trans     &trans  &kp LA(LC(DELETE))
-                                        &kp LEFT_ALT  &kp BACKSPACE  &mo 2                &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
+&trans     &kp N1        &kp N2  &kp N3        &kp N4         &kp N5               &kp N6       &kp N7     &kp N8        &kp N9     &kp N0  &trans
+&trans     &kp TAB       &trans  &trans        &trans         &tog 2               &kp LEFT     &kp DOWN   &kp UP        &kp RIGHT  &trans  &trans
+&kp LSHFT  &kp CAPSLOCK  &trans  &trans        &trans         &ext_power EP_TOG    &kp ESC      &trans     &trans        &trans     &trans  &kp LA(LC(DELETE))
+                                 &kp LEFT_ALT  &kp BACKSPACE  &mo 2                &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
             >;
         };
 
@@ -115,7 +115,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL   &kp AT  &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS   &kp ASTRK     &kp LPAR  &kp RPAR      &trans
+&trans     &kp EXCL   &kp AT  &kp HASH      &kp DLLR       &kp PRCNT    &kp CARET    &kp AMPS   &kp ASTRK     &kp LPAR  &kp RPAR      &trans
 &kp LCTRL  &trans     &trans  &trans        &trans         &tog 1       &kp MINUS    &kp EQUAL  &kp LBKT      &kp RBKT  &kp QUESTION  &trans
 &kp LSHFT  &kp TILDE  &trans  &kp LC(C)     &kp LC(V)      &kp LC(X)    &kp UNDER    &kp PLUS   &kp LBRC      &kp RBRC  &kp SLASH     &trans
                               &kp LEFT_ALT  &kp BACKSPACE  &mo 2        &lt 1 ENTER  &kp SPACE  &kp LEFT_ALT
@@ -125,10 +125,10 @@
         screen_control {
             label = "Screen";
             bindings = <
-&trans          &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)        &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans      &trans      &trans      &trans      &studio_unlock    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans      &trans      &trans            &trans  &trans  &trans
+&trans          &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans
+&trans          &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)        &trans      &trans        &trans        &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans      &trans      &trans      &trans      &studio_unlock    &trans      &trans        &trans        &trans  &trans  &trans
+                                        &trans      &trans      &trans            &trans      &trans        &trans
             >;
         };
     };
