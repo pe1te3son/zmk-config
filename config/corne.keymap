@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TICK";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <200>;
             bindings = <&kp SINGLE_QUOTE>, <&kp GRAVE>;
         };
 
@@ -63,8 +63,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BACKSLASH";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
-            bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
         };
     };
 
