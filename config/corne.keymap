@@ -80,7 +80,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none           &tick     &kp COMMA        &kp PERIOD           &kp P              &kp Y    &kp F      &kp G               &kp C                 &kp R            &kp L  &none
+&none           &kp SQT   &kp COMMA        &kp PERIOD           &kp P              &kp Y    &kp F      &kp G               &kp C                 &kp R            &kp L  &none
 &none           &kp A     &hml LEFT_ALT O  &hml LEFT_CONTROL E  &hml LEFT_SHIFT U  &kp I    &kp D      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL T  &hmr LEFT_ALT N  &kp S  &none
 &kp LEFT_SHIFT  &kp SEMI  &kp Q            &kp J                &kp K              &kp X    &kp B      &kp M               &kp W                 &kp V            &kp Z  &kp RIGHT_SHIFT
                                            &mo 3                &kp BACKSPACE      &mo 2    &lt 1 RET  &kp SPACE           &kp LEFT_ALT
