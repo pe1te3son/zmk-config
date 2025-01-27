@@ -114,10 +114,10 @@
         screen_control {
             label = "Screen";
             bindings = <
-&trans          &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans
-&trans          &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)        &trans      &trans        &trans        &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans      &trans      &trans      &trans      &studio_unlock    &trans      &trans        &trans        &trans  &trans  &trans
-                                        &trans      &trans      &trans            &trans      &trans        &tog 4
+&trans          &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)    &kp LA(NUMBER_6)  &kp LA(N7)    &kp LA(N8)    &kp LA(N9)  &kp LA(N0)  &trans
+&trans          &trans      &trans      &trans      &trans      &trans        &trans            &trans        &trans        &trans      &trans      &trans
+&kp LEFT_SHIFT  &trans      &trans      &trans      &kp LA(B)   &trans        &bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &trans      &trans      &trans
+                                        &trans      &trans      &trans        &trans            &trans        &tog 4
             >;
         };
 
