@@ -123,10 +123,10 @@
 
         layer_4 {
             bindings = <
-&kp ESCAPE  &kp I             &kp Q  &kp W   &kp E      &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &kp LEFT_SHIFT    &kp A  &kp S   &kp D      &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&kp M       &kp LEFT_CONTROL  &kp Z  &kp X   &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                                     &trans  &kp SPACE  &kp ENTER    &mo 4   &trans  &trans
+&kp ESCAPE  &kp I             &kp Q  &kp W      &kp E      &kp R    &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &kp LEFT_SHIFT    &kp A  &kp S      &kp D      &kp F    &trans  &trans  &trans  &trans  &trans  &trans
+&kp M       &kp LEFT_CONTROL  &kp Z  &kp X      &kp C      &kp V    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp ENTER  &kp SPACE  &mo 1    &mo 4   &trans  &trans
             >;
 
             label = "Gaming";
